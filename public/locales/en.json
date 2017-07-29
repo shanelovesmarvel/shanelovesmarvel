@@ -1,0 +1,23 @@
+{
+  "home": {
+    "title": "Angular App with Webpack"
+  },
+  "header": {
+    "links": {
+      "about": "About",
+      "login": "Login"
+    }
+  },
+  "login": {
+    "labels": {
+      "submit": "Login"
+    }
+  },
+  "components": {
+    "languages": {
+      "labels": {
+        "change": "Change language"
+      }
+    }
+  }
+}

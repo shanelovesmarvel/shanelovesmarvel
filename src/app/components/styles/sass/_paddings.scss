@@ -1,0 +1,61 @@
+.padding-4-xs {
+  padding: 4px;
+}
+
+.padding-top-1-xs {
+  padding-top: 1px;
+}
+
+.padding-top-8-xs {
+  padding-top: 8px !important;
+}
+
+.padding-bottom-1-xs {
+  padding-bottom: 1px;
+}
+
+.padding-2-xs {
+  padding: 2px !important;
+}
+
+.padding-left-4-xs {
+  padding-left: 4px;
+}
+
+.padding-right-4-xs {
+  padding-right: 4px;
+}
+
+.padding-right-40 {
+  padding-right: 40px !important;
+}
+
+.padding-left-40 {
+  padding-left: 40px !important;
+}
+
+.padding-left-45 {
+  padding-left: 45px !important;
+}
+
+.padding-right-60 {
+  padding-right: 60px !important;
+}
+
+$padding-xs: 10px;
+$padding-sm: 20px;
+$padding-md: 25px;
+$padding-lg: 40px;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 768px,
+  md: 992px,
+  lg: 1200px
+);
+
+@include generate-paddings(
+  $sizes: ('none': 0, 'xs': $padding-xs, 'sm': $padding-sm, 'md': $padding-md, 'lg': $padding-lg),
+  $breakpoints: $grid-breakpoints
+);
+
