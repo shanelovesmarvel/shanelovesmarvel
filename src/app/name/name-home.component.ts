@@ -64,7 +64,6 @@ export class NameHomeComponent implements OnInit {
     clickTile(event) {
         let name: string = event.target.innerText;
         if (name) {
-            console.info(name);
             this.router.navigate(['/name', name]);
         }
     }

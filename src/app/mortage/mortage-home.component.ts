@@ -87,11 +87,6 @@ export class MortageHomeComponent implements OnInit {
         this.monthlyRate = (monthlyRate * 100).toFixed(2);
         this.monthlyPrincipal = monthlyPrincipal.toFixed(2);
         this.amortization = amortization;
-
-        console.info(monthlyPayment);
-        console.info(monthlyRate);
-        console.info(monthlyPrincipal);
-        console.info(amortization);
     }
 
     round(value: number): number {
