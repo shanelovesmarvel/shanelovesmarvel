@@ -19,6 +19,7 @@ import { LoginModule } from './login/login.module';
 import { MovieModule } from './movie/movie.module';
 import { NameModule } from './name/name.module';
 import { MortageModule } from './mortage/mortage.module';
+import { TheaterModule } from './theater/theater.module';
 import { AuthModule } from './components/auth/auth.module';
 
 /**COMPONENTS */
@@ -47,7 +48,8 @@ require('./app.module.scss');
 	    LoginModule,
         MovieModule,
         NameModule,
-        MortageModule
+        MortageModule,
+        TheaterModule
     ],
     declarations: [
         AppComponent,

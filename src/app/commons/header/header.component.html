@@ -19,6 +19,9 @@
 					<a class="nav-link" [routerLink]="['/mortage']">Mortage</a>
 				</li>
 				<li class="nav-item" routerLinkActive="active">
+					<a class="nav-link" [routerLink]="['/theater']">Kid Theater</a>
+				</li>
+				<li class="nav-item" routerLinkActive="active">
 					<a class="nav-link" *ngIf="!logged" [routerLink]="['login']">{{ 'header.links.login' | translate }}</a>
 					<a class="nav-link cursor-pointer" *ngIf="logged" (click)="logout()">Log Out</a>
 				</li>
