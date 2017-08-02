@@ -42,12 +42,12 @@ export class MovieListComponent implements OnInit {
         let index: number = this.selectedMovies.findIndex((movie: IMovie) => movie.name.toLowerCase() === event.name.toLowerCase());
 
         if (filtered[0].movie.voted) {
-            if (index === -1) {
-                this.selectedMovies.push(event);
+            if (index !== -1) {
+                this.selectedMovies.splice(index, 1);
             }
         } else {
-            if (index !== -1) {
-                this.selectedMovies.slice(index, 1);
+            if (index === -1) {
+                this.selectedMovies.push(event);
             }
         }
         filtered[0].movie.voted = !filtered[0].movie.voted;
