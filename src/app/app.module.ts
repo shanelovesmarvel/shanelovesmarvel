@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { HttpModule, Http } from '@angular/http';
 import { BrowserModule }  from '@angular/platform-browser';
 import { TranslateStaticLoader, TranslateLoader, TranslateModule } from 'ng2-translate';
@@ -62,6 +62,7 @@ require('./app.module.scss');
         StoreService,
         HttpFallback
     ],
+    schemas: [CUSTOM_ELEMENTS_SCHEMA],
     bootstrap: [ AppComponent ]
 })
 

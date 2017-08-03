@@ -8,6 +8,7 @@ import { NameHomeComponent } from './name/name-home.component';
 import { NameCardComponent } from './name/name-card.component';
 import { MortageHomeComponent } from './mortage/mortage-home.component';
 import { TheaterComponent } from './theater/theater.component';
+import { PlayComponent } from './theater/play.component';
 
 const routes: Routes = [
 	{ path: '', component: HomeComponent },
@@ -15,6 +16,7 @@ const routes: Routes = [
 	{ path: 'mortage', component: MortageHomeComponent },
 	{ path: 'name', component: NameHomeComponent },
 	{ path: 'theater', component: TheaterComponent },
+	{ path: 'theater/:sname', component: PlayComponent},
 	{ path: 'name/:gname', component: NameCardComponent },
 	{ path: 'mymovies', component: MovieListComponent }
 ];
