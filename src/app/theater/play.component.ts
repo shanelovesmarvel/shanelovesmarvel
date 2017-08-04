@@ -6,7 +6,7 @@ import { Plays } from './plays';
     selector: 'my-play',
     template: `
     <div class="container">
-        <div *ngFor="let line of lines">
+        <div *ngFor="let line of lines" style="padding: 0.5rem;">
             <span [class]="speakers[line.speaker]">{{line.speaker}} : {{line.speakContent}}</span>
         </div>
     </div>
@@ -25,9 +25,9 @@ export class PlayComponent implements OnInit {
 
     ngOnInit() { 
         this.route.params.subscribe((params: any) => {
-            let name: string = params["sname"];
-            if (name) {
-                let play: any = Plays.find((play: any) => play.name === name);
+            let sname: string = params["sname"];
+            if (sname) {
+                let play: any = Plays.find((play: any) => play.sname === sname);
                 this.currPlay = play && play.content;
             }
             let rows = this.currPlay.split("\n");

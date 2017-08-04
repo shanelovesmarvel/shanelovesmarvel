@@ -1,6 +1,8 @@
 export const Plays = [
     {
         name: 'Bridge of Spies',
+        sname: 'brigeofspies',
+        poster: '/public/img/bos.jpg',
         content: `Narrator: There was once a bridge that was full of spies. A man walked up to it.
 Man: What is this ?
 Spy:  What does it look like, dummy ?  It's a bridge of spies. Go away !  We are spying !
@@ -24,6 +26,8 @@ Spy: Nothing ! I just wanted to keep acting like a spy.
 Narrator:  End scene !`
     }, {
         name: 'Magic Mike',
+        sname: 'magicmike',
+        poster: '/public/img/mm.jpg',
         content: `Narrator: Josh's bike has a flat tire. He needs help.
 Josh: Oh No ! My bike has a flat tire. How am I gonna get to hockey practice on time ?  Oh I know ! I know what I'll do !  I will call Magic Mike!   Magic Mike !  Magic Mike !
 Mike: Yes, I am  Magic Mike !  I am like regular Mike except magic ! 
@@ -44,6 +48,8 @@ Mike: Oh yeah you're right, I guess I am just Mike without Magic.
 Narrator: End scene !`
     }, {
         name: 'The Accountant',
+        sname: 'theaccountant',
+        poster: '/public/img/theaccount.jpg',
         content: `Narrator: Two accountants sit at a dinner table.
 Steve: I love numbers so much !
 Roger:  Me too, on the count of three, let’s say our favorite numbers.
@@ -67,6 +73,8 @@ Roger: I love being your friend.
 Narrator: End scene!`
     }, {
         name: 'Gold',
+        sname: 'gold',
+        poster: '/public/img/gold.jpg',
         content: `Narrator: Bob owns a gold store. Matthew is a regular customer at the store.
 Matthew: Hi Bob ! Bob ! Bob! I’m back from stealing gold.
 Bob: Hey, wait a second ! Just a few minutes ago, someone stole my gold !
@@ -84,5 +92,25 @@ Bob: I’m crying so much.
 Matthew: Why?
 Bob: Because…I have no pants!!!!!!!!
 Narrator: End scene!`
+    }, {
+        name: 'Birdman',
+        sname: 'birdman',
+        poster: '/public/img/birdman.jpg',
+        content: `Narrator: A little boy meets his favorite superhero for the very first time.
+Thomas: Birdman, is that you ?!
+Birdman: Caw! Caw! Caw !
+Thomas: I always believed in you Birdman. I am your number one fan.
+Birdman: Caw! Caw! Caw !
+Thomas: I want to be just like you when I grow up, Birdman.
+Birdman: Caw! Caw! Caw !
+Thomas: I wish my dad was here to meet you too.
+Birdman: He is.
+Thomas: Where ?
+Birdman: I am your dad, Thomas !
+Thomas: I knew it Birdman Dad.
+Birdman: No you didn't.
+Thomas: You are right, can you call me Birdman Son ?
+Birdman: No your name is Thomas.
+Narrator: End Scene!`
     }
 ];

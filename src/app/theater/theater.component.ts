@@ -6,19 +6,23 @@ import { Router } from '@angular/router';
     selector: 'my-theater',
     template: `
     <div class="whole">
-        <div class="banner" style="height: 600px;">
+        <div class="banner" style="margin-top: 1rem;">
             <div class="img-wrapper">
-                <img src="/public/img/4.jpg">
+                <img src="/public/img/kidtheater.jpg">
             </div>
         </div> 
-        <div class="container">
-            <div class="row" >
-                <div class="col-md-4 col-sm-6" *ngFor="let play of plays">
-                    <div>
-                        <img src="/public/img/01.png" width="200px">
+        <div class="container" style="margin-top: 10rem; margin-bottom: 5rem;">
+            <div class="row">
+                <ng-container *ngFor="let play of plays">
+                    <div class="col-md-4">
+                        <div>
+                            <img [src]="play.poster" style="height: 300px; width: 200px;">
+                        </div>
+                        <button class="btn btn-success" style="margin: 1rem;"
+                            (click)="viewScript($event)">{{play?.name}}
+                        </button>
                     </div>
-                    <button class="btn btn-default" (click)="viewScript($event)"><span class="glyphicon glyphicon-film"></span><strong>{{play.name}}</strong></button>
-                </div>
+                </ng-container>
             </div>
         </div>
     </div>
@@ -26,17 +30,19 @@ import { Router } from '@angular/router';
 })
 
 export class TheaterComponent implements OnInit {
-    constructor(private router: Router) { 
+    constructor(private router: Router) {
     }
 
-    plays: Array<any>= Plays;
+    plays: Array<any> = Plays;
 
     ngOnInit() { }
 
-    viewScript(event){
+    viewScript(event) {
         let name: string = event.target.innerText;
+        console.info(name);
         if (name) {
-            this.router.navigate(['/theater', name]);
+            let play: any = this.plays.find((play: any) => play.name === name);
+            this.router.navigate(['/theater', play && play.sname]);
         }
     }
 }
