@@ -18,9 +18,11 @@ import { Router } from '@angular/router';
                         <div>
                             <img [src]="play.poster" style="height: 300px; width: 200px;">
                         </div>
-                        <button class="btn btn-success" style="margin: 1rem;"
-                            (click)="viewScript($event)">{{play?.name}}
-                        </button>
+                        <div style="margin-top: 1.5rem;margin-bottom: 1.5rem;display: grid;width: 200px;">
+                            <button class="btn btn-success"
+                                (click)="viewScript($event)">{{play?.name}}
+                            </button>
+                        </div>
                     </div>
                 </ng-container>
             </div>
